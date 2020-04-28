@@ -11,6 +11,25 @@ describe("postListReducer", () => {
     id: 1
   };
 
+  const currentState = {
+    1: {
+      title: "Title",
+      body: "Body",
+      upvote: 3,
+      downvote: 2,
+      postDate: "current date",
+      id: 1
+    },
+    2: {
+      title: "Title2",
+      body: "Body2",
+      upvote: 3,
+      downvote: 2,
+      postDate: "current date",
+      id: 2
+    }
+  };
+
   test("should return default state if there is no action type passed into the reducer", () => {
     expect(postListReducer({}, { type: null })).toEqual({});
   });
@@ -34,6 +53,23 @@ describe("postListReducer", () => {
         downvote: downvote,
         postDate: postDate,
         id: id
+      }
+    });
+  });
+
+  test("Should successfully delete a post", () => {
+    action = {
+      type: "DELETE_POST",
+      id: 1
+    };
+    expect(postListReducer(currentState, action)).toEqual({
+      2: {
+        title: "Title2",
+        body: "Body2",
+        upvote: 3,
+        downvote: 2,
+        postDate: "current date",
+        id: 2
       }
     });
   });
