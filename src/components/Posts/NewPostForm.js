@@ -16,9 +16,18 @@ const NewPostForm = (props) => {
     });
   }
 
+  const title = {
+    marginTop: '5%'
+  }
+
+  const buttonStyles = {
+    margin: 'auto auto',
+    display: 'block',
+  }
+
   return (
     <React.Fragment>
-      <h1> Add New Post </h1>
+      <h1 style={title}> Add New Post </h1>
       <Form onSubmit={handleNewPostSubmission}>
         <Form.Group controlId="formBasicTitle">
           <Form.Label>Title</Form.Label>
@@ -30,7 +39,7 @@ const NewPostForm = (props) => {
           <Form.Control as="textarea" rows="3" name="body" placeholder="Give us all the detail" />
         </Form.Group>
 
-        <Button variant="primary" type="submit">
+        <Button style={buttonStyles} variant="primary" type="submit">
           Submit
         </Button>
       </Form>
