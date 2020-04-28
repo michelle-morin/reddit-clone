@@ -8,7 +8,7 @@ const NewPostForm = (props) => {
     event.preventDefault();
     props.onNewPostCreation({
       title: event.target.title.value,
-      body: event.target.title.value,
+      body: event.target.body.value,
       upvote: 0,
       downvote: 0,
       postDate: Date.now(),

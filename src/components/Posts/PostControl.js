@@ -134,12 +134,12 @@ PostControl.propTypes = {
 };
 
 const mapStateToProps = (state) => {
-  const newOrder = Object.values(state.masterPostList).sort((a, b) => {
-    return (b.upvote - b.downvote) - (a.upvote - a.downvote);
-  });
+  // const newOrder = Object.values(state.masterPostList).sort((a, b) => {
+  //   return (b.upvote - b.downvote) - (a.upvote - a.downvote);
+  // });
 
   return {
-    masterPostList: newOrder,
+    masterPostList: state.masterPostList,
     formVisible: state.formVisible,
     selectedPost: state.selectedPost
   };
