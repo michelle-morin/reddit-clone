@@ -1,6 +1,6 @@
 # Reddit Clone
 
-#### By: Dusty McCord, Michelle Morin, April 28, 2020
+#### By: Dusty McCord, Michelle Morin, Jonathan Carlos April 28, 2020
 
 ## Description
 
@@ -62,4 +62,4 @@ _Open the contents of the directory in a text editor or IDE of your choice (e.g.
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
-Copyright &copy; 2020 **_Michelle Morin, Dusty McCord_** 
+Copyright &copy; 2020 **_Michelle Morin, Dusty McCord, Jonathan Carlos_** 
