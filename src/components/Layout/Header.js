@@ -1,7 +1,7 @@
 import React from "react";
-import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 
-const Header = () => {
+const Header = (props) => {
   const headerStyles = {};
   return (
     <div style={headerStyles}>
@@ -11,7 +11,7 @@ const Header = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/">Posts</Nav.Link>
+            <Nav.Link onClick={props.whenButtonClick}>{props.buttonText}</Nav.Link>
           </Nav>
           <Nav>
             <Nav.Link href="#deets">More deets</Nav.Link>

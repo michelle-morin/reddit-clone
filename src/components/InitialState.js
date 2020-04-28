@@ -1,6 +1,6 @@
 const InitialState = {
   masterPostList: {
-    1: {
+    "1": {
       title: "Cats are cool",
       body:
         "Astrodonius Xuanhanosaurus Giganotosaurus Tendaguria Pinacosaurus Kaatedocus Troodon Dracopelta Coeluroides Banji Pterospondylus Agujaceratops Basutodon Epichirostenotes Nanosaurus Tawa Piveteausaurus Telmatosaurus Austrocheirus Herrerasaurus Stygivenator Sonidosaurus Protiguanodon Tatankaceratops Hypacrosaurus Angolatitan Europasaurus Yandusaurus Cruxicheiros Turiasaurus",
@@ -9,7 +9,7 @@ const InitialState = {
       postDate: 1588105367958,
       id: "1"
     },
-    2: {
+    "2": {
       title: "Cats be like, WHAT!?!",
       body:
         "Astrodonius Xuanhanosaurus Giganotosaurus Tendaguria Pinacosaurus Kaatedocus Troodon Dracopelta Coeluroides Banji Pterospondylus Agujaceratops Basutodon Epichirostenotes Nanosaurus Tawa Piveteausaurus Telmatosaurus Austrocheirus Herrerasaurus Stygivenator Sonidosaurus Protiguanodon Tatankaceratops Hypacrosaurus Angolatitan Europasaurus Yandusaurus Cruxicheiros Turiasaurus",
@@ -18,7 +18,7 @@ const InitialState = {
       postDate: 1588105396294,
       id: "2"
     },
-    3: {
+    "3": {
       title: "Fat Cats are the greatest",
       body:
         "Astrodonius Xuanhanosaurus Giganotosaurus Tendaguria Pinacosaurus Kaatedocus Troodon Dracopelta Coeluroides Banji Pterospondylus Agujaceratops Basutodon Epichirostenotes Nanosaurus Tawa Piveteausaurus Telmatosaurus Austrocheirus Herrerasaurus Stygivenator Sonidosaurus Protiguanodon Tatankaceratops Hypacrosaurus Angolatitan Europasaurus Yandusaurus Cruxicheiros Turiasaurus",

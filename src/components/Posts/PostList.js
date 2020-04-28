@@ -16,6 +16,7 @@ const PostList = (props) => {
             whenDownvoteClicked={props.onClickingDownvote}
             whenUpvoteClicked={props.onClickingUpvote}
             whenPostClicked={props.onClickingPost}
+            id={post.id}
           />
         );
       })}
