@@ -3,19 +3,26 @@ import PropTypes from "prop-types";
 import { Card, Button } from "react-bootstrap";
 
 const PostDetails = (props) => {
+  const { post, whenDownvoteClicked, whenUpvoteClicked } = props;
   return (
     <React.Fragment>
       <Card>
         <Card.Title>
-          <h1> {props.post.title} </h1>
+          <h1> {post.title} </h1>
         </Card.Title>
         <Card.Body>
-          <p>Posted on {new Date(props.post.postDate).toLocaleString()}</p>
-          <p>{props.post.body}</p>
-          <p>Up Votes: {props.post.upvote}</p>
-          <p>Down Votes: {props.post.downvote}</p>
-          <Button onClick={() => props.whenUpvoteClicked(props.post.id)}>Up Vote</Button>
-          <Button onClick={() => props.whenDownvoteClicked(props.post.id)}>Down Vote</Button>
+          <p>Posted on {new Date(post.postDate).toLocaleString()}</p>
+          <p>{post.body}</p>
+          <p>Up Votes: {post.upvote}</p>
+          <p>Down Votes: {post.downvote}</p>
+          <Button
+            onClick={() => {
+              whenUpvoteClicked(post.id);
+            }}
+          >
+            Up Vote
+          </Button>
+          <Button onClick={() => whenDownvoteClicked(post.id)}>Down Vote</Button>
         </Card.Body>
       </Card>
     </React.Fragment>

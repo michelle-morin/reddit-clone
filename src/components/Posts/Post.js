@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { Card, Button } from "react-bootstrap";
 
 const Post = (props) => {
-  const postStyles = {};
   return (
     <React.Fragment>
       <Card>

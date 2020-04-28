@@ -41,12 +41,46 @@ function PostControl(props) {
     dispatch(action);
   };
 
-  const handleUpvote = () => {
-    console.log("upvote");
+  const handleUpvote = (id) => {
+    const action = {
+      type: "UPVOTE",
+      id: id
+    };
+    dispatch(action);
+    if (props.selectedPost !== null) {
+      const updatedPost = props.masterPostList[id];
+      const actionTwo = {
+        type: "CHANGE_SELECTED",
+        id: id,
+        title: updatedPost.title,
+        body: updatedPost.body,
+        upvote: updatedPost.upvote,
+        downvote: updatedPost.downvote,
+        postDate: updatedPost.postDate
+      };
+      dispatch(actionTwo);
+    }
   };
 
-  const handleDownvote = () => {
-    console.log("updownvote");
+  const handleDownvote = (id) => {
+    const action = {
+      type: "DOWNVOTE",
+      id: id
+    };
+    dispatch(action);
+    if (props.selectedPost !== null) {
+      const updatedPost = props.masterPostList[id];
+      const actionTwo = {
+        type: "CHANGE_SELECTED",
+        id: id,
+        title: updatedPost.title,
+        body: updatedPost.body,
+        upvote: updatedPost.upvote,
+        downvote: updatedPost.downvote,
+        postDate: updatedPost.postDate
+      };
+      dispatch(actionTwo);
+    }
   };
 
   const handleNewPost = (newPost) => {
