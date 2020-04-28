@@ -13,6 +13,7 @@ const PostDetails = (props) => {
         <Card.Body>
           <p>Posted on {new Date(post.postDate).toLocaleString()}</p>
           <p>{post.body}</p>
+          <p> Total Score: {post.upvote - post.downvote} </p>
           <p>Up Votes: {post.upvote}</p>
           <p>Down Votes: {post.downvote}</p>
           <Button

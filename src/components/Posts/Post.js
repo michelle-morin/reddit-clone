@@ -12,6 +12,7 @@ const Post = (props) => {
         <Card.Body>
           <p>Posted on {new Date(props.postDate).toLocaleString()}</p>
           <p>{props.body}</p>
+          <p> Total Score: {props.upvote - props.downvote} </p>
           <p>Up Votes: {props.upvote}</p>
           <p>Down Votes: {props.downvote}</p>
           <Button variant="outline-secondary" onClick={() => props.whenPostClicked(props.id)}>
