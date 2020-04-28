@@ -73,4 +73,56 @@ describe("postListReducer", () => {
       }
     });
   });
+
+  test("Should successfully add one vote to upvote property", () => {
+    action = {
+      type: "UPVOTE",
+      id: 1
+    };
+
+    expect(postListReducer(currentState, action)).toEqual({
+      1: {
+        title: "Title",
+        body: "Body",
+        upvote: 4,
+        downvote: 2,
+        postDate: "current date",
+        id: 1
+      },
+      2: {
+        title: "Title2",
+        body: "Body2",
+        upvote: 3,
+        downvote: 2,
+        postDate: "current date",
+        id: 2
+      }
+    });
+  });
+
+  test("Should successfully add one vote to downvote property", () => {
+    action = {
+      type: "DOWNVOTE",
+      id: 2
+    };
+
+    expect(postListReducer(currentState, action)).toEqual({
+      1: {
+        title: "Title",
+        body: "Body",
+        upvote: 4,
+        downvote: 2,
+        postDate: "current date",
+        id: 1
+      },
+      2: {
+        title: "Title2",
+        body: "Body2",
+        upvote: 3,
+        downvote: 3,
+        postDate: "current date",
+        id: 2
+      }
+    });
+  });
 });

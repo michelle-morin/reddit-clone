@@ -18,6 +18,16 @@ export default (state = {}, action) => {
       delete newState[id];
       return newState;
 
+    case "UPVOTE":
+      const updatedUpvote = (state[id].upvote += 1);
+      const upvoteState = { ...state, [id]: { ...state[id], upvote: updatedUpvote } };
+      return upvoteState;
+
+    case "DOWNVOTE":
+      const updatedDownvote = (state[id].downvote += 1);
+      const downvoteState = { ...state, [id]: { ...state[id], downvote: updatedDownvote } };
+      return downvoteState;
+
     default:
       return state;
   }
