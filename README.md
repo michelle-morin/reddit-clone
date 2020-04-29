@@ -5,9 +5,10 @@
 ## Description
 
 _This application is a clone of Reddit, built using React and Redux._
+_Deployed on [GitHub Pages](http://michelle-morin.github.io/reddit-clone)_
 
 ## Component Tree / Wireframe
-![component tree](src/img/wireframe.jpg)
+![component tree](ComponentTree.jpg)
 
 ## Specification User Stories
 * As a user, I want to enter content into a form and submit to create a new post.
