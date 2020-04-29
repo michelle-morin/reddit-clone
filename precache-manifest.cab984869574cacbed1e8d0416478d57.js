@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b7c9ef8af9fd0eac0d1581f58a5342ac",
+    "revision": "4784c58e64f59398334a54fa963c9c2a",
     "url": "/reddit-clone/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/reddit-clone/static/css/2.69121389.chunk.css"
   },
   {
-    "revision": "6720883d28e5f8205b4e",
+    "revision": "b33f103032122d5ff569",
     "url": "/reddit-clone/static/css/main.f74953e5.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/reddit-clone/static/js/2.0b52e4fb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6720883d28e5f8205b4e",
-    "url": "/reddit-clone/static/js/main.537dbeb7.chunk.js"
+    "revision": "b33f103032122d5ff569",
+    "url": "/reddit-clone/static/js/main.df5977b7.chunk.js"
   },
   {
     "revision": "7c87edb22a9ecbdc7b31",
